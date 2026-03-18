@@ -1,0 +1,28 @@
+[project]
+name = "insurance-claims-fraud-graph"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=3.0.0,<4.0.0)",
+    "numpy (>=2.4.2,<3.0.0)",
+    "faker (>=40.1.2,<41.0.0)",
+    "neo4j (>=6.1.0,<7.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "pydantic-settings (>=2.12.0,<3.0.0)",
+    "pydantic (>=2.12.5,<3.0.0)",
+    "fastapi (>=0.129.0,<0.130.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "uvicorn[standard] (>=0.40.0,<0.41.0)"
+]

@@ -1,0 +1,44 @@
+# Environment variables (keep secrets safe!)
+.env
+.env.*
+.env.local
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.Python
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.cache/
+npm-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Databases (runtime state)
+*.db
+*.sqlite
+
+# Data / large files
+data/*.parquet
